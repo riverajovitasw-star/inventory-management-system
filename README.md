@@ -209,3 +209,89 @@ Intern ID: **CITS3291**
 ## License
 
 This project is developed for educational and internship purposes.
+inventory-management-system/
+│
+├── 01  .gitignore
+├── 02  README.md
+├── 03  package.json
+│
+├── backend/
+│   ├── 04  .env.example
+│   ├── 05  server.js
+│   ├── 06  package.json
+│   │
+│   ├── config/
+│   │   └── 07  db.js
+│   │
+│   ├── controllers/
+│   │   ├── 08  analyticsController.js
+│   │   ├── 09  authController.js          
+│   │   ├── 10  logController.js
+│   │   ├── 11  productController.js
+│   │   ├── 12  stockController.js
+│   │   ├── 13  transactionController.js
+│   │   └── 14  userController.js
+│   │
+│   ├── middleware/
+│   │   ├── 15  auth.js                    
+│   │   ├── 16  errorHandler.js
+│   │   └── 17  rateLimiter.js
+│   │
+│   ├── models/
+│   │   ├── 18  ActivityLog.js
+│   │   ├── 19  Product.js
+│   │   ├── 20  Transaction.js
+│   │   └── 21  User.js                    
+│   │
+│   ├── routes/
+│   │   ├── 22  analytics.js
+│   │   ├── 23  auth.js
+│   │   ├── 24  logs.js
+│   │   ├── 25  products.js
+│   │   ├── 26  stock.js
+│   │   ├── 27  transactions.js
+│   │   └── 28  users.js
+│   │
+│   └── utils/
+│       ├── 29  logger.js
+│       └── 30  seed.js
+│
+└── frontend/
+    ├── 31  .env.example
+    ├── 32  index.html
+    ├── 33  package.json
+    ├── 34  postcss.config.js
+    ├── 35  tailwind.config.js
+    ├── 36  vite.config.js
+    │
+    └── src/
+        ├── 37  App.jsx
+        ├── 38  index.css
+        ├── 39  main.jsx
+        │
+        ├── components/
+        │   ├── common/
+        │   │   ├── 40  Modal.jsx
+        │   │   ├── 41  Table.jsx
+        │   │   └── 42  UI.jsx
+        │   ├── layout/
+        │   │   └── 43  Layout.jsx
+        │   └── ui/
+        │       ├── 44  SmokeyBackground.jsx   
+        │       └── 45  login-form.jsx          
+        │
+        ├── context/
+        │   └── 46  AuthContext.jsx
+        │
+        ├── pages/
+        │   ├── 47  AnalyticsPage.jsx
+        │   ├── 48  DashboardPage.jsx
+        │   ├── 49  LoginPage.jsx              
+        │   ├── 50  LogsPage.jsx
+        │   ├── 51  ProductsPage.jsx
+        │   ├── 52  StockPage.jsx
+        │   ├── 53  TransactionsPage.jsx
+        │   └── 54  UsersPage.jsx
+        │
+        └── services/
+            └── 55  api.js
